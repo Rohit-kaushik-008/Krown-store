@@ -1,111 +1,192 @@
-:root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+/*  Heading Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+/* Body Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Source+Sans+3:wght@400;500;600;700&display=swap');
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Special / Monospace Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap');
 
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
+
+@import "tailwindcss";
+
+@theme {
+
+    /* ==============/ Margin & Padding /============== */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 12px;
+    --space-base: 16px;
+    --space-l: 20px;
+    --space-lg: 24px;
+    --space-xl: 28px;
+
+
+
+    /* ==============/ Texts Colors & Size /============== */
+
+    /* Text Colors */
+    --text-white-color: hsl(0, 0%, 95%);
+    --text-white-muted: hsl(218, 11%, 75%);
+
+    --text-black-color: hsl(0, 0%, 5%);
+    --text-black-muted: hsl(218, 11%, 25%);
+
+    /* Text Sizes */
+    --text-sm: 14px;
+    --text-base: 16px;
+    --text-lg: 20px;
+    --text-xl: 32px;
+    --text-hero: 48px;
+
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-base: 16px;
+    --radius-full: 50%;
+
+
+
+    /* ==============/ Theme Colors /============== */
+
+    /* Brand Colors */
+    --color-theme-light: hsl(271, 91%, 65%);
+    --color-theme-main: hsl(262, 83%, 58%);
+    --color-theme-dark: hsl(264, 67%, 35%);
+
+    /* Background Colors */
+    --color-bg-light: hsl(229, 31%, 14%);
+    --color-bg-main: hsl(230, 42%, 11%);
+    --color-bg-dark: hsl(229, 68%, 5%);
+
+    /* Shadow Colors */
+    --color-shadow-light: hsl(271, 91%, 75%);
+    --color-shadow-dark: hsl(271, 100%, 35%);
+
+    --color-shadow-sm: 0 2px 8px rgba(0, 0, 0, .15);
+    --color-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.25);
+    --color-shadow-glow: 0 0 20px var(--color-theme-main);
+
+    /* Border Colors */
+    --color-theme-border: hsl(262, 90%, 50%);
+
+
+
+    /*==============/ White & Black Colors /============== */
+    --color-white-0: hsl(0, 0%, 100%);
+    --color-white-1: hsl(0, 0%, 90%);
+    --color-white-2: hsl(0, 0%, 80%);
+
+    --color-black-0: hsl(0, 0%, 0%);
+    --color-black-1: hsl(0, 0%, 10%);
+    --color-black-2: hsl(0, 0%, 20%);
+
+
+
+    /* ==============/ Fonts /============== */
+
+
+    /*  HEADINGS */
+
+
+    /* Hero / Main Branding */
+    --font-heading-1: "Sora", sans-serif;
+
+    /* Page Titles */
+    --font-heading-2: "Space Grotesk", sans-serif;
+
+    /* Section Headings */
+    --font-heading-3: "Inter Tight", sans-serif;
+
+    /* Card Titles */
+    --font-heading-4: "Outfit", sans-serif;
+
+    /* Small Headings */
+    --font-heading-5: "Poppins", sans-serif;
+
+    /* Labels */
+    --font-heading-6: "Inter", sans-serif;
+
+
+
+
+    /* BODY */
+
+
+    /* Main Paragraph */
+    --font-body-1: "Inter", sans-serif;
+
+    /* Secondary Text */
+    --font-body-2: "Manrope", sans-serif;
+
+    /* UI Text */
+    --font-body-3: "DM Sans", sans-serif;
+
+    /* Description Text */
+    --font-body-4: "Roboto", sans-serif;
+
+    /* Documentation Text */
+    --font-body-5: "Source Sans 3", sans-serif;
+
+
+
+
+    /* SPECIAL / EXTRAS */
+
+
+    /* Code */
+    --font-special-1: "JetBrains Mono", monospace;
+
+    /* Developer / Terminal */
+    --font-special-2: "Fira Code", monospace;
+
+    /* Cyber / Futuristic */
+    --font-special-3: "Space Mono", monospace;
+
+    /* Professional Mono */
+    --font-special-4: "IBM Plex Mono", monospace;
+
+    /* Simple Numbers / Stats */
+    --font-special-5: "Roboto Mono", monospace;
+
+
+
+    /* Status Colors */
+
+    --color-success: hsl(142, 70%, 45%);
+    --color-warning: hsl(45, 90%, 55%);
+    --color-error: hsl(0, 80%, 60%);
+    --color-info: hsl(200, 80%, 55%);
+
+    /* Layers */
+
+    --z-base: 1;
+    --z-dropdown: 10;
+    --z-navbar: 100;
+    --z-modal: 1000;
+
+    /* Animation */
+
+    --transition-fast: 150ms ease;
+    --transition-base: 300ms ease;
+    --transition-slow: 500ms ease;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
+@layer base {
+    body {
+        font-family: var(--font-body-1);
+    }
 }
 
-body {
-  margin: 0;
+* {
+    box-sizing: border-box;
 }
 
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+.searchbar:focus {
+    box-shadow: 1px 1px 24px hsla(271, 91%, 65%, 0.3);
 }
 
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
-}
-
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
-}
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
-}
-p {
-  margin: 0;
-}
-
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
-
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+*::-webkit-scrollbar {
+    display: none;
 }

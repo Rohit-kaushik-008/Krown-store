@@ -1,19 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import Display from './components/Display'
 
 const App = () => {
+
+
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
 
     <div
-      className='bg-bg-main h-screen text-white'>
+      className='bg-bg-main h-screen w-screen text-white lg:flex'>
 
-      <Display />
-      
-      <Sidebar />
+      <div
+        className={`bg-bg-dark lg:relative fixed left-0 top-0 z-100 h-screen w-full opcaity-30 transition-all duration-300 ease-in-out lg:w-[30vw] lg:translate-x-0 md:w-[50vw]  ${isOpen ? "translate-x-0 " : "-translate-x-full"}`}>
+        <Sidebar openNav={setIsOpen} />
+      </div>
 
-    </div>
+      <div
+        className='lg:relative'>
+        <Display openNav={setIsOpen} />
+
+      </div>
+
+    </div >
   )
 }
 

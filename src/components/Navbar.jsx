@@ -1,15 +1,26 @@
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = ({openNav}) => {
+
+
+    const openSidebar = () => {
+   
+        
+        openNav(true);
+    }
+    
+
+
   return (
     <div
-        className='bg-bg-dark w-screen p-4 flex justify-between items-center gap-4'>
+        className='bg-bg-light w-screen lg:w-[70vw] p-4 flex justify-between items-center gap-4 z-1000'>
 
             <div
                 className=''>
                 <img 
+                    onClick={openSidebar}
                     className='w-16 sm:h-16 cursor-pointer'
-                    src="/icons/Logo.svg" 
+                    src="/icons/newlogo.png" 
                     alt="logo" />
             </div>
 

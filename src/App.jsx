@@ -19,7 +19,8 @@ const App = () => {
       </div>
 
       <div
-        className='lg:fixed  lg:right-0 z-0 lg:w-[70vw] scroll-auto'>
+        className='lg:fixed lg:right-0 z-0 lg:w-[70vw] overflow-auto h-screen
+        '>
         <Display openNav={setIsOpen} />
 
       </div>

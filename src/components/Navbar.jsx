@@ -28,7 +28,7 @@ const Navbar = ({openNav}) => {
                 className='w-[50%]'>
 
                 <input
-                    className='searchbar bg-bg-light w-[90%] sm:w-full border-theme-light border rounded-4xl focus:outline-0 py-2 px-6 shadow-shadow-light transition-shadow duration-300 text-white-2 text-normal' 
+                    className='searchbar bg-bg-light w-[90%] sm:w-full border-theme-light border rounded-4xl focus:outlisne-0 py-2 px-6 shadow-shadow-light transition-shadow duration-300 text-white-2 text-normal' 
                     type="text"
                     placeholder='Search for Products' />
 

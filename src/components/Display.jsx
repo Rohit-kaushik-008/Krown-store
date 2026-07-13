@@ -18,14 +18,14 @@ const display = ({openNav}) => {
 
 
             <div
-                className='sticky top-0 left-0 border-2 border-theme-main w-screen lg:w-full'>
+                className='sticky top-0 left-0 border-2 border-theme-main w-screen lg:w-full z-10'>
 
                 <Navbar openNav={openNav}/>
 
             </div>
 
             <div 
-                className='text-white'>
+                className='text-white h-auto z-90'>
 
                 <Routes>
 

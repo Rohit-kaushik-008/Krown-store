@@ -1,16 +1,16 @@
 import React from 'react'
-import Category1 from '../components/Category1'
+import Categories from "../components/Categories"
 import PopularProducts1 from '../components/PopularProducts1'
 
 const Home = () => {
     return (
         <div
-            className='relative'>
+            className='relative h-auto'>
 
             <div
                 className='relative'>
                 <img
-                    className='lg:m-2'
+                    className=''
                     src="images/lp-banner.png"
                     alt="heroImage" />
 
@@ -43,7 +43,7 @@ const Home = () => {
 
             </div>
 
-            <Category1 />
+            <Categories />
 
             {/* <PopularProducts1 /> */}
         

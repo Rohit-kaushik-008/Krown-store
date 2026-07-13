@@ -5,15 +5,15 @@ const Category1 = () => {
         <div>
 
             <div
-                className='flex justify-between items-center w-full px-4 py-2 border'>
+                className='flex justify-between items-center w-full px-4 py-2'>
 
                 <h1
-                    className='text-white'>
+                    className='text-white text-2xl font-heading-1'>
                     Shop by categories
                 </h1>
 
                 <button
-                    className='flex gap-2 justify-center items-center border active:scale-95 cursor-pointer transition-all duration-150  py-2 px-4'>
+                    className='flex gap-2 justify-center items-center active:scale-95 cursor-pointer transition-all duration-150  py-2 px-4 active:translate-x-1'>
                     View all
                     <img
                         className='invert h-5'
@@ -23,7 +23,11 @@ const Category1 = () => {
 
             </div>
 
-            <div>
+
+            <div
+                className=''>
+
+                <h1>Products Image Container</h1>
 
             </div>
 

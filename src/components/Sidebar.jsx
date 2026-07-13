@@ -75,7 +75,7 @@ const Sidebar = ({openNav}) => {
 
       <div
         onClick={closeSidebar}
-        className='py-8 flex flex-col gap-6 px-6 md:border-theme-main md:border-2 rounded-b-lg'>
+        className='py-8 flex flex-col gap-6 px-6 md:border-theme-main md:border-2 rounded-b-lg bg-bg-main h-screen'>
 
         {navlist.map((items, idx) => {
           return <Navlist

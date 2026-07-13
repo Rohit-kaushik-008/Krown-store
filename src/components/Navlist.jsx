@@ -5,7 +5,8 @@ const Navlist = ({ list }) => {
 
     return (
 
-        <div>
+        <div
+            className='bg-bg-dark'>
 
             <Link
                 className='font-heading-4 flex gap-4 items-center font-semibold text-lg rounded-lg py-4 px-4 bg-theme-dark w-full hover:bg-theme-light transition-all duration-400'

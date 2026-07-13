@@ -10,18 +10,18 @@ const Home = () => {
             <div
                 className='relative'>
                 <img
-                    className='top-0 left-0 z-10'
+                    className='lg:m-2'
                     src="images/lp-banner.png"
                     alt="heroImage" />
 
                 <div
-                    className='z-100 text-white absolute top-25 left-5 -translate-y-1/2 flex flex-col justify-center items-start gap-1 sm:top-50 sm:left-10'>
+                    className='z-0 text-white absolute top-25 left-5 -translate-y-1/2 flex flex-col justify-center items-start gap-1 sm:top-50 sm:left-10'>
                     <p
                         className='text-mist-300 text-sm sm:text-lg'>
                         New Collection
                     </p>
                     <h1
-                        className='text-3xl text-theme-main font-semibold font-heading-4 sm:text-5xl'>
+                        className='text-3xl text-theme-main font-semibold font-heading-4 sm:text-5xl text-shadow-2xs text-shadow-black'>
                         Elevate Your Style
                     </h1>
 

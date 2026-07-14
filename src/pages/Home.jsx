@@ -1,6 +1,6 @@
 import React from 'react'
 import Categories from "../components/Categories"
-import PopularProducts1 from '../components/PopularProducts1'
+import Populars from '../components/Populars'
 
 const Home = () => {
     return (
@@ -45,7 +45,8 @@ const Home = () => {
 
             <Categories />
 
-            {/* <PopularProducts1 /> */}
+            <Populars />
+
         
         </div>
     )

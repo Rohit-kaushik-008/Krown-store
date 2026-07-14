@@ -7,11 +7,7 @@ import ProuductProvider from './context/ProductContext.jsx'
 
 createRoot(document.getElementById('root')).render(
 
-  
   <BrowserRouter>
-  {/* <ProuductProvider> */}
-      <App />
-  {/* </ProuductProvider> */}
-
-    </BrowserRouter>
+    <App />
+  </BrowserRouter>
 )

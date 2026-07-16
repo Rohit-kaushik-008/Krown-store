@@ -1,201 +1,177 @@
 /*  Heading Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
 /* Body Fonts */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Source+Sans+3:wght@400;500;600;700&display=swap");
 
 /* Special / Monospace Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap");
 
 @import "tailwindcss";
 
 @theme {
+  /* ==============/ Margin & Padding /============== */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-base: 16px;
+  --space-l: 20px;
+  --space-lg: 24px;
+  --space-xl: 28px;
 
-    /* ==============/ Margin & Padding /============== */
-    --space-xs: 4px;
-    --space-sm: 8px;
-    --space-md: 12px;
-    --space-base: 16px;
-    --space-l: 20px;
-    --space-lg: 24px;
-    --space-xl: 28px;
+  /* ==============/ Texts Colors & Size /============== */
 
+  /* Text Colors */
+  --text-white-color: hsl(0, 0%, 95%);
+  --text-white-muted: hsl(218, 11%, 75%);
 
+  --text-black-color: hsl(0, 0%, 5%);
+  --text-black-muted: hsl(218, 11%, 25%);
 
-    /* ==============/ Texts Colors & Size /============== */
+  /* Text Sizes */
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 20px;
+  --text-xl: 32px;
+  --text-hero: 48px;
 
-    /* Text Colors */
-    --text-white-color: hsl(0, 0%, 95%);
-    --text-white-muted: hsl(218, 11%, 75%);
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-base: 16px;
+  --radius-full: 50%;
 
-    --text-black-color: hsl(0, 0%, 5%);
-    --text-black-muted: hsl(218, 11%, 25%);
+  /* ==============/ Theme Colors /============== */
 
-    /* Text Sizes */
-    --text-sm: 14px;
-    --text-base: 16px;
-    --text-lg: 20px;
-    --text-xl: 32px;
-    --text-hero: 48px;
+  /* Brand Colors */
+  --color-theme-light: hsl(271, 91%, 65%);
+  --color-theme-main: hsl(262, 83%, 58%);
+  --color-theme-dark: hsl(264, 67%, 35%);
 
-    /* Border Radius */
-    --radius-sm: 8px;
-    --radius-md: 12px;
-    --radius-base: 16px;
-    --radius-full: 50%;
+  /* Background Colors */
+  --color-bg-light: hsl(229, 31%, 14%);
+  --color-bg-main: hsl(230, 42%, 11%);
+  --color-bg-dark: hsl(229, 68%, 5%);
 
+  /* Shadow Colors */
+  --color-shadow-light: hsl(271, 91%, 75%);
+  --color-shadow-dark: hsl(271, 100%, 35%);
 
+  --color-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --color-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.25);
+  --color-shadow-glow: 0 0 20px var(--color-theme-main);
 
-    /* ==============/ Theme Colors /============== */
+  /* Border Colors */
+  --color-theme-border: hsl(262, 90%, 50%);
 
-    /* Brand Colors */
-    --color-theme-light: hsl(271, 91%, 65%);
-    --color-theme-main: hsl(262, 83%, 58%);
-    --color-theme-dark: hsl(264, 67%, 35%);
+  /*==============/ White & Black Colors /============== */
+  --color-white-0: hsl(0, 0%, 100%);
+  --color-white-1: hsl(0, 0%, 90%);
+  --color-white-2: hsl(0, 0%, 80%);
 
-    /* Background Colors */
-    --color-bg-light: hsl(229, 31%, 14%);
-    --color-bg-main: hsl(230, 42%, 11%);
-    --color-bg-dark: hsl(229, 68%, 5%);
+  --color-black-0: hsl(0, 0%, 0%);
+  --color-black-1: hsl(0, 0%, 10%);
+  --color-black-2: hsl(0, 0%, 20%);
 
-    /* Shadow Colors */
-    --color-shadow-light: hsl(271, 91%, 75%);
-    --color-shadow-dark: hsl(271, 100%, 35%);
+  /* ==============/ Fonts /============== */
 
-    --color-shadow-sm: 0 2px 8px rgba(0, 0, 0, .15);
-    --color-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.25);
-    --color-shadow-glow: 0 0 20px var(--color-theme-main);
+  /*  HEADINGS */
 
-    /* Border Colors */
-    --color-theme-border: hsl(262, 90%, 50%);
+  /* Hero / Main Branding */
+  --font-heading-1: "Sora", sans-serif;
 
+  /* Page Titles */
+  --font-heading-2: "Space Grotesk", sans-serif;
 
+  /* Section Headings */
+  --font-heading-3: "Inter Tight", sans-serif;
 
-    /*==============/ White & Black Colors /============== */
-    --color-white-0: hsl(0, 0%, 100%);
-    --color-white-1: hsl(0, 0%, 90%);
-    --color-white-2: hsl(0, 0%, 80%);
+  /* Card Titles */
+  --font-heading-4: "Outfit", sans-serif;
 
-    --color-black-0: hsl(0, 0%, 0%);
-    --color-black-1: hsl(0, 0%, 10%);
-    --color-black-2: hsl(0, 0%, 20%);
+  /* Small Headings */
+  --font-heading-5: "Poppins", sans-serif;
 
+  /* Labels */
+  --font-heading-6: "Inter", sans-serif;
 
+  /* BODY */
 
-    /* ==============/ Fonts /============== */
+  /* Main Paragraph */
+  --font-body-1: "Inter", sans-serif;
 
+  /* Secondary Text */
+  --font-body-2: "Manrope", sans-serif;
 
-    /*  HEADINGS */
+  /* UI Text */
+  --font-body-3: "DM Sans", sans-serif;
 
+  /* Description Text */
+  --font-body-4: "Roboto", sans-serif;
 
-    /* Hero / Main Branding */
-    --font-heading-1: "Sora", sans-serif;
+  /* Documentation Text */
+  --font-body-5: "Source Sans 3", sans-serif;
 
-    /* Page Titles */
-    --font-heading-2: "Space Grotesk", sans-serif;
+  /* SPECIAL / EXTRAS */
 
-    /* Section Headings */
-    --font-heading-3: "Inter Tight", sans-serif;
+  /* Code */
+  --font-special-1: "JetBrains Mono", monospace;
 
-    /* Card Titles */
-    --font-heading-4: "Outfit", sans-serif;
+  /* Developer / Terminal */
+  --font-special-2: "Fira Code", monospace;
 
-    /* Small Headings */
-    --font-heading-5: "Poppins", sans-serif;
+  /* Cyber / Futuristic */
+  --font-special-3: "Space Mono", monospace;
 
-    /* Labels */
-    --font-heading-6: "Inter", sans-serif;
+  /* Professional Mono */
+  --font-special-4: "IBM Plex Mono", monospace;
 
+  /* Simple Numbers / Stats */
+  --font-special-5: "Roboto Mono", monospace;
 
+  /* Status Colors */
 
+  --color-success: hsl(142, 70%, 45%);
+  --color-warning: hsl(45, 90%, 55%);
+  --color-error: hsl(0, 80%, 60%);
+  --color-info: hsl(200, 80%, 55%);
 
-    /* BODY */
+  /* Layers */
 
+  --z-base: 1;
+  --z-dropdown: 10;
+  --z-navbar: 100;
+  --z-modal: 1000;
 
-    /* Main Paragraph */
-    --font-body-1: "Inter", sans-serif;
+  /* Animation */
 
-    /* Secondary Text */
-    --font-body-2: "Manrope", sans-serif;
-
-    /* UI Text */
-    --font-body-3: "DM Sans", sans-serif;
-
-    /* Description Text */
-    --font-body-4: "Roboto", sans-serif;
-
-    /* Documentation Text */
-    --font-body-5: "Source Sans 3", sans-serif;
-
-
-
-
-    /* SPECIAL / EXTRAS */
-
-
-    /* Code */
-    --font-special-1: "JetBrains Mono", monospace;
-
-    /* Developer / Terminal */
-    --font-special-2: "Fira Code", monospace;
-
-    /* Cyber / Futuristic */
-    --font-special-3: "Space Mono", monospace;
-
-    /* Professional Mono */
-    --font-special-4: "IBM Plex Mono", monospace;
-
-    /* Simple Numbers / Stats */
-    --font-special-5: "Roboto Mono", monospace;
-
-
-
-    /* Status Colors */
-
-    --color-success: hsl(142, 70%, 45%);
-    --color-warning: hsl(45, 90%, 55%);
-    --color-error: hsl(0, 80%, 60%);
-    --color-info: hsl(200, 80%, 55%);
-
-    /* Layers */
-
-    --z-base: 1;
-    --z-dropdown: 10;
-    --z-navbar: 100;
-    --z-modal: 1000;
-
-    /* Animation */
-
-    --transition-fast: 150ms ease;
-    --transition-base: 300ms ease;
-    --transition-slow: 500ms ease;
-
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 500ms ease;
 }
 
 @layer base {
-    body {
-        font-family: var(--font-body-1);
-    }
+  body {
+    font-family: var(--font-body-1);
+  }
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .searchbar:focus {
-    box-shadow: 1px 1px 24px hsla(271, 91%, 65%, 0.3);
+  box-shadow: 1px 1px 24px hsla(271, 91%, 65%, 0.3);
 }
 
 *::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .shadow-box {
-    box-shadow: 1px 1px 12px hsla(271, 100%, 21%, 0.5);
+  box-shadow: 1px 1px 12px hsla(271, 100%, 21%, 0.5);
 }
 
 .shadow-container {
-    box-shadow: 2px 2px 4px hsl(270, 71%, 16%);
-
+  box-shadow: 2px 2px 4px hsl(270, 71%, 16%);
 }

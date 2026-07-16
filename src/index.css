@@ -192,5 +192,10 @@
 }
 
 .shadow-box {
-    box-shadow: 1px 1px 12px hsla(271, 100%, 21%, 0.5)
+    box-shadow: 1px 1px 12px hsla(271, 100%, 21%, 0.5);
+}
+
+.shadow-container {
+    box-shadow: 2px 2px 4px hsl(270, 71%, 16%);
+
 }

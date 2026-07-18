@@ -22,7 +22,7 @@ const FilterProducts = () => {
     <div className="flex flex-wrap justify-around items-between gap-2 px-4 py-4">
       {products.map((item) => {
         return (
-          <div key={item.id}>
+          <div className="my-4" key={item.id}>
             <ProductCard products={item} />
           </div>
         );

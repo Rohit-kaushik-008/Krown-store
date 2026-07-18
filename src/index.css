@@ -176,3 +176,7 @@
 .shadow-container {
   box-shadow: 2px 2px 4px hsl(270, 71%, 16%);
 }
+
+.color {
+  color : #101428
+}

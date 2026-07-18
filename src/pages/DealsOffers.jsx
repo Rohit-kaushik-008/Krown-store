@@ -44,7 +44,7 @@ const DealsOffers = () => {
           <img className="h-10" src="/icons/limitedIcon.svg" alt="" />
           Top Rated Deals
         </h1>
-        <div className="flex flex-nowrap overflow-scroll  items-between gap-4 py-4 mx-6">
+        <div className="flex flex-nowrap overflow-scroll justify-around items-between gap-4 px-2 py-4 mx-4">
           {topRatedItems.map((item) => {
             return (
               <div key={item.id}>
@@ -62,7 +62,7 @@ const DealsOffers = () => {
           Limited Deals
         </h1>
 
-        <div className="flex flex-nowrap overflow-scroll justify-around items-between gap-4 py-4 mx-6">
+        <div className="flex flex-nowrap overflow-scroll justify-around items-between gap-4 px-2 py-4 mx-4">
           {limitedItems.map((item) => {
             return (
               <div key={item.id}>

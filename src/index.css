@@ -49,6 +49,7 @@
   --color-theme-dark: hsl(264, 67%, 35%);
 
   /* Background Colors */
+  --color-bg-lighter: hsl(230, 29%, 16%);
   --color-bg-light: hsl(229, 31%, 14%);
   --color-bg-main: hsl(230, 42%, 11%);
   --color-bg-dark: hsl(229, 68%, 5%);

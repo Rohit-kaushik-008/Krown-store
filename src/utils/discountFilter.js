@@ -1,9 +1,8 @@
 export const discountFilter = (products, selectedDiscount) => {
-
-  if (selectedDiscount.length === 0) {
+  if (selectedDiscount === null) {
     return products;
   }
-  return products.filter((items) =>
-    items.discountPercentage > selectedDiscount
+  return products.filter(
+    (items) => items.discountPercentage > selectedDiscount,
   );
 };

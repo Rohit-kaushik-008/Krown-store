@@ -1,5 +1,12 @@
+import useFilters from "../Contexts/FilterContext";
 const PriceFilter = () => {
   const prices = [
+    {
+      id: 0,
+      min: 0,
+      max: 1000000,
+      label: "All Prices",  
+    },
     {
       id: 1,
       min: 0,
@@ -18,13 +25,17 @@ const PriceFilter = () => {
       max: 1000,
       label: "$500 - $1000",
     },
-    {
-      id: 4,
-      min: 1000,
-      max: Infinity,
-      label: "$1000 +",
-    },
   ];
+
+  const { filters, setFilters } = useFilters();
+
+  const applyPrice = (e) => {
+    const selectedPrice = JSON.parse(e.target.value);
+    setFilters((prevFilters) => ({
+      ...prevFilters,
+      price: selectedPrice,
+    }));
+  };  
 
   return (
     <div>
@@ -39,10 +50,16 @@ const PriceFilter = () => {
             className="flex gap-4 justify-start items-center cursor-pointer"
           >
             <input
+              onChange={(e) => {
+                applyPrice(e);
+              }}
               className="w-4 h-4 accent-theme-main cursor-pointer"
               type="radio"
               name="price"
-              value={item.id}
+              value={JSON.stringify({ min: item.min, max: item.max })}
+              checked={
+                filters.price.min === item.min && 
+                filters.price.max === item.max}
             />
             {item.label}
           </label>

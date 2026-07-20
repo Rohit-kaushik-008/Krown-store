@@ -6,16 +6,13 @@ import { ratingFilter } from "../utils/ratingFilter.js";
 export const handleFilter = (products, filters) => {
   let filteredProducts = products;
 
-  filteredProducts = categoryFilter(filteredProducts, filters.categores);
-
-  filteredProducts = priceFilter(filteredProducts, filters.price);
+  filteredProducts = categoryFilter(filteredProducts, filters.categories);
 
   filteredProducts = ratingFilter(filteredProducts, filters.rating);
 
-  filteredProducts = discountFilter(
-    filteredProducts,
-    filters.discountPercentage,
-  );
+  filteredProducts = priceFilter(filteredProducts, filters.price);
+
+  filteredProducts = discountFilter(filteredProducts, filters.discount);
 
   return filteredProducts;
 };

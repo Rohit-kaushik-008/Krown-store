@@ -16,7 +16,7 @@ const ProductFilters = () => {
           Filters
         </h1>
         <div
-          className={`border-2 border-theme-light rounded-sm bg-bg-light fixed left-0 top-0 z-10 w-full h-screen overflow-scroll transition-all ${isOpen ? "translate-x-0 " : "-translate-x-full"} duration-300 ease-in`}
+          className={`border-2 border-theme-light rounded-sm bg-bg-light fixed left-0 top-0 z-10 w-full h-screen overflow-scroll transition-all lg:absolute lg:top-0 lg:left-0 ${isOpen ? "translate-x-0 " : "-translate-x-full"} duration-300 ease-in`}
         >
           <FilterModal openFilter={setIsOpen} />
         </div>

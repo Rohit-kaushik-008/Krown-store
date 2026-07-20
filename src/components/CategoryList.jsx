@@ -3,7 +3,7 @@ import useFilters from "../Contexts/FilterContext";
 
 const CategoryList = () => {
   const { products } = useProduct();
-  const { setFilters } = useFilters();
+  const { filters, setFilters } = useFilters();
 
   const applyCategory = (e) => {
     const category = e.target.value;
@@ -14,8 +14,7 @@ const CategoryList = () => {
         ...prev,
         categories: [...prev.categories, category],
       }));
-    }
-    else {
+    } else {
       setFilters((prev) => ({
         ...prev,
         categories: prev.categories.filter((item) => item != category),
@@ -46,6 +45,7 @@ const CategoryList = () => {
                   className="w-5 h-5 p-2 accent-theme-main cursor-pointer bg-bg-light border-theme-light checked:bg-theme-main checked:border-theme-main"
                   type="checkbox"
                   value={category}
+                  checked={filters.categories.includes(category)}
                 />
                 <span className="capitalize">{category.replace("-", " ")}</span>
               </label>

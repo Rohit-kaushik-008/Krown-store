@@ -1,6 +1,6 @@
 export const ratingFilter = (products, selectedRating) => {
 
-  if (selectedRating.length === 0) {
+  if (selectedRating === null) {
     return products;
   }
   return products.filter((items) =>

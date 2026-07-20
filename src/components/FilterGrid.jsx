@@ -1,11 +1,12 @@
 import ProductCard from "./ProductCard";
 import useProduct from "../Contexts/ProductContext";
-// import { handleFilter } from "../utils/filters";
+import { filterProducts } from "../utils/filteredProducts";
 
 const FilterGrid = () => {
-  const { products, loading, error } = useProduct();
+  const { loading, error } = useProduct();
 
-  // const filteredProducts = handleFilter(products, filters);
+  const filteredProducts = filterProducts();
+
 
   if (loading) {
     return (
@@ -20,10 +21,10 @@ const FilterGrid = () => {
       </h1>
     );
   }
-  
+
   return (
     <div className="flex flex-wrap justify-around items-between gap-2 px-4 py-4">
-      {products.map((item) => {
+      {filteredProducts.map((item) => {
         return (
           <div className="my-4" key={item.id}>
             <ProductCard products={item} />

@@ -17,7 +17,8 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ### Contexts
 
-```1. CartContext
+```
+    1. CartContext
     2. ProductContext
     3. ThemeContext
     4. WishlistContext

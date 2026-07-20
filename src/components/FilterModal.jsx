@@ -4,10 +4,8 @@ import DiscountFilter from "../components/DiscoutFilter.jsx";
 import RatingFilter from "../components/RatingFilter.jsx";
 import PriceFilter from "../components/PriceFilter.jsx";
 import FilterBarFooter from "../components/FilterBarFooter.jsx";
-// import { filterItems } from "../utils/filters";
 
-const FilterModal = ({openFilter}) => {  
-  
+const FilterModal = ({ openFilter }) => {
   return (
     <div>
       <FilterModalHeading openFilter={openFilter} />
@@ -28,7 +26,6 @@ const FilterModal = ({openFilter}) => {
         <CategoryList />
 
         <FilterBarFooter />
-
       </div>
     </div>
   );

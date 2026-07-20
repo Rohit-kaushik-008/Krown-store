@@ -4,10 +4,10 @@ const Navlist = ({ list }) => {
   return (
     <div className="bg-bg-dark">
       <Link
-        className="font-heading-4 flex gap-4 items-center font-semibold text-lg rounded-lg py-4 px-4 bg-theme-dark w-full hover:bg-theme-light transition-all duration-400"
+        className="font-heading-4 flex gap-4 items-center font-semibold text-md rounded-lg py-4 px-4 bg-theme-dark w-full hover:bg-theme-light transition-all duration-400"
         to={list.path}
       >
-        <img className="h-8 invert" src={list.navicon} alt="" />
+        <img className="h-6 invert" src={list.navicon} alt="" />
         {list.title}
       </Link>
     </div>

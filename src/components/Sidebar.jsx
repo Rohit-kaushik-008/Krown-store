@@ -31,11 +31,6 @@ const Sidebar = ({ openNav }) => {
       title: "Wishlist",
       path: "wishlist",
     },
-    {
-      navicon: "/navbar/setting.svg",
-      title: "Setting",
-      path: "setting",
-    },
   ];
 
   return (
@@ -43,12 +38,12 @@ const Sidebar = ({ openNav }) => {
       <div className="flex justify-between items-center border-2 border-theme-main bg-bg-dark rounded py-4 px-4">
         <div className="flex justify-start items-center gap-2 font-heading-4 font-semibold">
           <img
-            className="h-16 rounded-full"
+            className="h-12 rounded-full"
             src="/icons/newlogo.png"
             alt="logo"
           />
 
-          <h1 className="text-4xl">KrownStore</h1>
+          <h1 className="text-2xl">KrownStore</h1>
         </div>
 
         <img

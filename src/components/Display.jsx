@@ -5,7 +5,6 @@ import Cart from "../pages/Cart";
 import Products from "../pages/Products";
 import DealsOffers from "../pages/DealsOffers";
 import Wishlist from "../pages/Wishlist";
-import Setting from "../pages/Setting";
 
 const display = ({ openNav }) => {
   return (
@@ -21,7 +20,6 @@ const display = ({ openNav }) => {
           <Route path="/products" element={<Products />} />
           <Route path="/deals&offers" element={<DealsOffers />} />
           <Route path="/wishlist" element={<Wishlist />} />
-          <Route path="/setting" element={<Setting />} />
         </Routes>
       </div>
     </div>

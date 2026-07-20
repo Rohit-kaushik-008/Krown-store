@@ -1,8 +1,11 @@
-import ProductCard from "../components/ProductCard";
+import ProductCard from "./ProductCard";
 import useProduct from "../Contexts/ProductContext";
+// import { handleFilter } from "../utils/filters";
 
-const FilterProducts = () => {
+const FilterGrid = () => {
   const { products, loading, error } = useProduct();
+
+  // const filteredProducts = handleFilter(products, filters);
 
   if (loading) {
     return (
@@ -31,4 +34,4 @@ const FilterProducts = () => {
   );
 };
 
-export default FilterProducts;
+export default FilterGrid;

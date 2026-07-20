@@ -4,7 +4,7 @@ const Navbar = ({ openNav }) => {
   };
 
   return (
-    <div className="bg-bg-light w-screen lg:w-[70vw] p-4 flex justify-between items-center gap-4 z-1000">
+    <div className="bg-bg-light w-screen lg:w-full px-4 py-2 flex justify-between items-center gap-4 z-1000">
       <div className="">
         <img
           onClick={openSidebar}

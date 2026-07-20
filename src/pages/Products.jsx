@@ -1,5 +1,5 @@
 import ProductFilters from "../components/ProductFilters";
-import FilterProducts from "../components/FilterProducts";
+import FilterGrid from "../components/FilterGrid.jsx";
 
 const Products = () => {
 
@@ -9,7 +9,7 @@ const Products = () => {
 
       <ProductFilters />
       
-      <FilterProducts />
+      <FilterGrid />
 
     </div>
   );

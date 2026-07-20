@@ -10,7 +10,7 @@ const ProductFilters = () => {
   };
 
   return (
-    <div className="h-16 border flex justify-between items-center px-8 py-2">
+    <div className="h-16 border border-theme-light flex justify-between items-center px-8 py-2">
       <div className="w-full flex gap-2 justify-center items-center">
         <h1 onClick={openFilter} className="text-lg font-body-3 cursor-pointer">
           Filters

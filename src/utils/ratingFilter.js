@@ -7,3 +7,4 @@ export const ratingFilter = (products, selectedRating) => {
     items.rating > selectedRating
   );
 };
+

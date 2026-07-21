@@ -15,7 +15,7 @@ export function FilterProvider({ children }) {
     },
     discount: null,
   });
-  const [sorting, setSorting] = useState("default");
+  const [sorting, setSorting] = useState("");
   const [search, setSearch] = useState("");
 
   const clearSearch = () => setSearch("");

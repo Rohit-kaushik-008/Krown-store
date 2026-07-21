@@ -1,10 +1,13 @@
+import useFilters from "../Contexts/FilterContext";
 const Navbar = ({ openNav }) => {
   const openSidebar = () => {
     openNav(true);
   };
 
+  const { search, setSearch } = useFilters();
+
   return (
-    <div className="bg-bg-light w-screen lg:w-full px-4 py-2 flex justify-between items-center gap-4 z-1000">
+    <div className="bg-bg-light w-screen lg:w-full px-4 py-2 flex justify-between items-center gap-4">
       <div className="">
         <img
           onClick={openSidebar}
@@ -16,9 +19,13 @@ const Navbar = ({ openNav }) => {
 
       <div className="w-[50%]">
         <input
-          className="searchbar bg-bg-light w-[90%] sm:w-full border-theme-light border rounded-4xl focus:outlisne-0 py-2 px-6 shadow-shadow-light transition-shadow duration-300 text-white-2 text-normal"
+          onChange={(e) => {
+            setSearch(e.target.value);
+          }}
+          className="searchbar bg-bg-light w-[90%] sm:w-full border-theme-light border rounded-4xl focus:outline-none py-2 px-6 shadow-shadow-light transition-shadow duration-300 text-white-2 text-normal"
           type="text"
           placeholder="Search for Products"
+          value={search}
         />
       </div>
 

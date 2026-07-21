@@ -1,5 +1,4 @@
 export const categoryFilter = (products, selectedCategories) => {
-
   if (selectedCategories.length === 0) {
     return products;
   }

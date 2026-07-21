@@ -9,7 +9,7 @@ import Wishlist from "../pages/Wishlist";
 const display = ({ openNav }) => {
   return (
     <div className="relative lg:w-full">
-      <div className="sticky top-0 left-0 border-2 border-theme-main w-screen lg:w-full z-10">
+      <div className="sticky top-0 left-0 border-2 border-theme-main w-screen lg:w-full z-30">
         <Navbar openNav={openNav} />
       </div>
 

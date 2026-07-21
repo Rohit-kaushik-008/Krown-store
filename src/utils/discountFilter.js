@@ -6,3 +6,5 @@ export const discountFilter = (products, selectedDiscount) => {
     (items) => items.discountPercentage > selectedDiscount,
   );
 };
+
+
